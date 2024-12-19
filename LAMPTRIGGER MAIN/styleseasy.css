@@ -1,0 +1,173 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+
+    background: linear-gradient(50deg, #087c00, #522eb4,#ff3273);
+    background-size: 400% 400%;
+
+    animation: gradientBG 5s ease infinite;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+    
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#board {
+    width: 500px;
+    height: 500px;
+    
+    margin: 50px auto;
+    display: grid;
+
+    grid-template-columns: repeat(10, 1fr); 
+    grid-template-rows: repeat(10, 1fr);
+ 
+    gap: 2px;
+
+}
+
+#board div{
+
+    border: 1px solid #d2b39c;
+    background-color: #65bf3b;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition:  0.3s ease, 0.2s ease;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#home-button, #retry-button {
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(169, 169, 169);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#home-button:hover, #retry-button:hover {
+    background-color: darkgray;
+}
+
+
+#message {
+    font-size: medium;
+    color: #ffffff;
+    top: 10%
+}
+
+.tile-clicked {
+    background: #d2b77a !important;
+    color: white;
+}
+
+.lamped {
+    background-color: orange;
+    color: white;
+}
+
+.x1{
+    color: blue;
+}
+
+.x2{
+    color:green ;
+}
+
+.x3{
+    color:red;
+}
+
+.x4{
+    color: purple;
+}
+
+.x5{
+    color:darkred;
+}
+
+.x6{
+    color: aquamarine;
+
+}
+.x7{
+    color: black;
+
+}
+.x8 {
+    color: gold;
+}
+
+#lamp-button{
+    font-size: 36px;
+
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #373737;
+    cursor: pointer;
+    
+    box-shadow: 0px, 4px, 10px rgba(red, green, blue, alpha);
+
+    transition: 0.3s ease, 0.2s ease;
+}
+
+#lamp-button:hover {
+    background-color: #d2d2d2;
+    transform: scale(1.1)
+}
+
+#lamp-button:active {
+    background-color: #bdbdbd;
+}
+
+#mines-count {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+#message {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#reset-button {
+    
+    background-color: #ffffff;
+    border: 1px solid #c9fe60;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size:medium;
+    cursor: pointer;
+}
+
+#reset-button:hover {
+    background-color: #c0c0c0;
+}

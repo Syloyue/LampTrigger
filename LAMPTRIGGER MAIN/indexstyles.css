@@ -1,0 +1,157 @@
+/* welcome page  */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/background.jpg');
+}
+
+.welcomeContainer {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Pastikan ini merujuk ke gambar yang tepat */
+    background-size: cover;
+    text-align: center;
+    color:#000000; /* Pastikan teks tetap terlihat kontras dengan background */
+    
+}
+
+.content {
+    z-index: 2;
+    padding: 20px;
+    background-color: rgba(217, 75, 246, 0.847); /* Background transparan untuk area sambutan */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(224, 220, 220, 0.979);
+    margin-bottom: 50px; /* Menambahkan jarak dengan kotak fitur */
+    max-width: 80%;
+}
+.welcomeTitle{
+    font-size: 48px; 
+    color: #f3a847; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    animation: blink 1.5s infinite;
+}
+@keyframes blink {
+    0%, 100% {
+        color: #fff;
+    }
+    50% {
+        color: #FFD700;
+    }
+}
+
+
+.welcomeDescription {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-style: italic;
+   
+}   
+/* End of welcome  */
+
+
+
+
+/* buttonLanjutkan edit */
+
+.nextButton {
+    background-color: #22c4edea;
+    color: white;
+    font-size: 60px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+    animation: blink 1.5s infinite;
+}
+@keyframes blink {
+    0%, 100% {
+        color: #fff;
+    }
+    50% {
+        color: #FFD700;
+    }
+}
+
+
+.nextButton:hover {
+    background-color: #45a049;
+}
+
+.nextButtonContainer{
+    padding: 100px;
+    position: relative;
+    text-align: center;
+    box-sizing: 100px;
+}
+/* end of the buttonLanjutkan edit */
+
+/* level*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.level-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.level-btn a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+.easy {
+    background-color: #4caf50;
+    color: #fff;
+}
+.easy:hover {
+    background-color: #45a049;
+}
+.medium {
+    background-color: #ff9800;
+    color: #fff;
+}
+.medium:hover {
+    background-color: #fb8c00;
+}
+.hard {
+    background-color: #f44336;
+    color: #fff;
+}
+.hard:hover {
+    background-color: #e53935;
+}
+.held {
+    background-color: #9c27b0;
+    color: #fff;
+}
+.held:hover {
+    background-color: #7b1fa2;
+}
